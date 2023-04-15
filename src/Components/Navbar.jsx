@@ -13,8 +13,8 @@ const Navbar = () => {
 							to={'/'}
 							class='flex-none text-2xl font-bold text-[#307979] hover:text-amber-500 duration-150 ease-in-out logo'>
 							<p className='flex flex-col gap-y-0'>
-								<span className='leading-3 tracking-[0.17em]'>Mezquita</span>
-								<span className='text-base tracking-wider text-center'>De Fuengirola</span>
+								<span className='leading-3 tracking-[0.17em]'>SUHAIL</span>
+								<span className='text-base tracking-wider text-center'>Comunidad Musulmana</span>
 							</p>
 						</Link>
 						<div class='md:hidden'>
@@ -48,15 +48,17 @@ const Navbar = () => {
 					</div>
 					<div class='hidden overflow-hidden transition-all duration-300 basis-full grow md:block'>
 						<ul class='flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-center md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7 py-6'>
-							<li class='nav-hover-effect'>
+							{/*<li class='nav-hover-effect'>
 								<NavLink to={'/'}>Home</NavLink>
+							</li>
+							<li class='nav-hover-effect'>
+								<NavLink to={'/partners'}>Comunidad</NavLink>
 							</li>
 							<li className='nav-hover-effect'>
 								<NavLink to={'/donation'}>Donation Opportunities</NavLink>
 							</li>
-							<li class='nav-hover-effect'>
-								<NavLink to={'/partners'}>Partners</NavLink>
-							</li>
+						*/}
+
 						</ul>
 					</div>
 					{/* Mobile  */}

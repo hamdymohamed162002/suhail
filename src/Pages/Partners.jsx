@@ -1,87 +1,92 @@
 import { Link } from 'react-router-dom';
-
+import'./paretner.css';
+import { useEffect, useRef, useState } from 'react';
+import axios from 'axios';
 const Partners = () => {
+	const [Name, setName] = useState(null);
+   const [ErrorName, setErrorName] = useState(false);
+   const [PriceError, setPriceError] = useState(false)
+const [checkd, setcheckd] = useState(false)
+
+	const [Price, setPrice] = useState(null);
+
+function submitHandler(e){
+	e.preventDefault()
+	if(!Name){
+		setErrorName(true)
+	}
+	else{
+		setErrorName(false)
+		
+	}
+	if(!Price){
+		setPriceError(true)
+	}
+	else{
+		setPriceError(false)
+
+	}
+	if(checkd){
+		setcheckd(true)
+	}
+	else{
+		setcheckd(false)
+
+	}
+	
+}
+useEffect(() => {
+//   axios.post('https://sis-t.redsys.es:25443/sis/realizarPago',{},{headers:{
+// 	"Access-Control-Allow-Origin": "*",
+// 	"responseType": 'text/html'
+//   }}).then(res=>{
+// 	console.log(res)
+//   })
+//   .catch(err=>console.log(err))
+
+  return () => {
+	
+  }
+}, [])
+
+
 	return (
 		<>
 			<section>
 				{/* <!-- Masonry Cards --> */}
 				<div class='max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto'>
 					{/* <!-- Grid --> */}
-					<div class='grid sm:grid-cols-12 gap-6'>
-						<div class='sm:self-end col-span-12 sm:col-span-7 md:col-span-8 lg:col-span-5 lg:col-start-3'>
-							{/* <!-- Card --> */}
-							<Link to={''} class='group relative block rounded-xl overflow-hidden'>
-								<div class='aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden'>
-									<img
-										class='group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover'
-										src='https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80'
-										alt='Image Description'
-									/>
-								</div>
-							</Link>
-							{/* <!-- End Card --> */}
-						</div>
-						{/* <!-- End Col --> */}
 
-						<div class='sm:self-end col-span-12 sm:col-span-5 md:col-span-4 lg:col-span-3'>
-							{/* <!-- Card --> */}
-							<Link to={''} class='group relative block rounded-xl overflow-hidden'>
-								<div class='aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden'>
-									<img
-										class='group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover'
-										src='https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
-										alt='Image Description'
-									/>
-								</div>
-							</Link>
-							{/* <!-- End Card --> */}
-						</div>
-						{/* <!-- End Col --> */}
+					<div className=''>
 
-						<div class='col-span-12 md:col-span-4'>
-							{/* <!-- Card --> */}
-							<Link to={''} class='group relative block rounded-xl overflow-hidden'>
-								<div class='aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden'>
-									<img
-										class='group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover'
-										src='https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
-										alt='Image Description'
-									/>
-								</div>
-							</Link>
-							{/* <!-- End Card --> */}
-						</div>
-						{/* <!-- End Col --> */}
+					
 
-						<div class='col-span-12 sm:col-span-6 md:col-span-4'>
-							{/* <!-- Card --> */}
-							<Link to={''} class='group relative block rounded-xl overflow-hidden'>
-								<div class='aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden'>
-									<img
-										class='group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover'
-										src='https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80'
-										alt='Image Description'
-									/>
-								</div>
-							</Link>
-							{/* <!-- End Card --> */}
-						</div>
-						{/* <!-- End Col --> */}
 
-						<div class='col-span-12 sm:col-span-6 md:col-span-4'>
-							{/* <!-- Card --> */}
-							<Link to={''} class='group relative block rounded-xl overflow-hidden'>
-								<div class='aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden'>
-									<img
-										class='group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover'
-										src='https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80'
-										alt='Image Description'
-									/>
+
+						<div className="form-container shadow-xl">
+							<form onSubmit={submitHandler}>
+								<label htmlFor="">Name</label>
+								<input className='input' type="text" name="" placeholder='Your Name' onChange={(e)=>setName(e.target.value)} id="" />
+								{ErrorName?<p className='text-red-600'> please fill this filed</p> :null}
+								<label htmlFor="">Price</label>
+								<input className='input' type="number"  onChange={(e)=>setPrice(e.target.value)}  placeholder='dontation cost' />
+								{PriceError?<p className='text-red-600'> please fill this filed</p> :null}
+								<div>
+									<input type="checkbox" on onChange={()=>setcheckd(!checkd)} name="" id="" />
+									<label className='ml-4' htmlFor="">temrs and condaiton <a href="https://drive.google.com/file/d/1KoWFLDIRavkWPzZuWD4IgbY93INM7xW9/view"> click here to read</a></label>
 								</div>
-							</Link>
-							{/* <!-- End Card --> */}
+								{checkd?<p className='text-red-600'> please check this filed</p> :null}
+								<button>Donate</button>
+							</form>
 						</div>
-						{/* <!-- End Col --> */}
+
+						{/* <form className='ok' action="https://sis-t.redsys.es:25443/sis/realizarPago" method="post" target="my_iframe">
+  <input id='ll' type="submit" value="Do Stuff!"/>
+</form>
+
+
+<iframe name="my_iframe" src="not_submitted_yet.aspx"></iframe> */}
+						
 					</div>
 					{/* <!-- End Grid --> */}
 				</div>
