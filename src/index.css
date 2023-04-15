@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav-hover-effect {
+		@apply relative before:absolute before:left-0 before:bottom-7 before:bg-amber-500 before:w-0 before:h-[2px]  hover:before:w-full before:transition-all before:duration-200 before:ease-in-out after:absolute after:right-0 after:top-7 after:bg-amber-500 after:w-0 after:h-[2px]  hover:after:w-full after:transition-all after:duration-200 after:ease-in-out  text-[#307979] font-semibold text-lg w-fit;
+	}
+	.active {
+		@apply text-amber-500;
+	}
+}
+
+.logo {
+	font-family: 'Cairo', sans-serif;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
