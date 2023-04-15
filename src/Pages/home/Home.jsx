@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './home.scss'
 const Home = () => {
 	return (
 		<>
@@ -8,7 +8,7 @@ const Home = () => {
 				<section>
 					{/* <!-- Hero --> */}
 					<div
-						class='relative overflow-hidden min-h-screen flex justify-center items-center w-full'
+						className='relative overflow-hidden min-h-screen flex justify-center items-center w-full'
 						style={{
 							backgroundImage: `url("https://uploads-ssl.webflow.com/61d62bbdbf92e35450b01a00/63f2c0203f4efb4f66513d4d_video(6)-poster-00001.jpg")`,
 							backgroundPosition: 'center',
@@ -17,27 +17,27 @@ const Home = () => {
 							objectFit: 'cover',
 							fontSize: '1rem'
 						}}>
-						<div class='z-10 w-full h-[600px] overflow-hidden flex justify-center items-center'>
-							<div class='max-w-4xl  mx-auto'>
-								<div class='text-center mx-auto h-full'>
+						<div className='z-10 w-full h-[600px] overflow-hidden flex justify-center items-center'>
+							<div className='max-w-4xl  mx-auto'>
+								<div className='text-center mx-auto h-full'>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-white dark:text-white text-2xl md:text-3xl lg:text-4xl '>
+									<div className='mb-10'>
+										<h1 className='block font-semibold text-white dark:text-white text-2xl md:text-3xl lg:text-4xl '>
 										Estamos desarrollando un plan para todo
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class='text-lg text-gray-300 text-white dark:text-gray-400'>
+									<div className='mb-10'>
+										<p className='text-lg text-gray-300 text-white dark:text-gray-400'>
 										Participar en un proyecto es una acción positiva para ayudarte a mejorar y ayudar a los demás.  
 										Mejora tu futuro y el futuro de los tuyos es fácil, comienza con buena voluntad y se desarrolla con buenas  palabras, 
 										consejo y efectiva colaboración. 
 										</p>
 									</div>
 									{/* <!-- Buttons --> */}
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/partners'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 											 Donar
 											</button>
 										</Link>
@@ -51,21 +51,21 @@ const Home = () => {
 					{/* <!-- End Hero --> */}
 
 					
-					<div class='z-10 w-full h-[400px] overflow-hidden flex justify-center items-center'
+					<div className='z-10 w-full h-[400px] overflow-hidden flex justify-center items-center'
 					style={{
 						
 					}}>
-							<div class='max-w-4xl  mx-auto '>
-								<div class='mx-auto h-full'>
+							<div className='max-w-4xl  mx-auto '>
+								<div className='mx-auto h-full'>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
+									<div className='mb-10'>
+										<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
 										  La Comunidad
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class=''>
+									<div className='mb-10'>
+										<p className=''>
 										La Comunidad Islámica Suhail de la Costa del Sol es una comunidad religiosa inscrita en el Registro de 
 										Entidades Religiosas de España con el nº xxxx. 
 										<br/>
@@ -79,9 +79,9 @@ const Home = () => {
 										</p>
 									</div>
 									{/* <!-- Buttons 
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 												Donate Now
 											</button>
 										</Link>
@@ -99,17 +99,17 @@ const Home = () => {
 
 
 						<div >
-							<div class='max-w-4xl  mx-auto '>
-							<div class='mx-auto h-full'>
+							<div className='max-w-4xl  mx-auto '>
+							<div className='mx-auto h-full'>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
+									<div className='mb-10'>
+										<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
 										Proyectos y Programas
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>Programa de Ayudas Sociales</b>
 										<br/>
 										Desde 2008, se comenzó, junto con otras entidades, el programa de ayuda social a las familias vulnerables o con necesidad. 
@@ -127,17 +127,17 @@ const Home = () => {
 									
 
 									{/* <!-- Buttons
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 												Donate Now
 											</button>
 										</Link>
 									</div> --> */}
 								</div>
 
-								<div class='mb-10'>
-										<p class=''>									
+								<div className='mb-10'>
+										<p className=''>									
 										<b>El Registro de Población Musulmana </b>
 										<br/>
 										Durante la historia de los musulmanes de España, y a la hora de solicitar cualquier servicio para la comunidad, nos enfrentamos a una pregunta muy sencilla, 
@@ -145,12 +145,12 @@ const Home = () => {
 										<br/>
 										En realidad, aunque sabemos que la comunidad musulmana es mucho mayor que las cifras que se comunican en los medios, esta información nunca ha sido documentada, lo que nos ha motiviado hace años a crear esta iniciativa: formar un registro de los musulmanes para poder estimar las necesidades reales, tanto actuales como futuras, y poder servirlas.
 										<br/>
-										<dev class='block font-semibold text-primary dark:text-white'>
+										<dev className='block font-semibold text-primary dark:text-white'>
 										<Link   to="https://forms.gle/aLj1QQhPeQSZV16J7"><p style={{
 										color: "blue"
 									}}
 									>Inscribeme</p></Link>
-										<Link  class='block font-semibold text-primary dark:text-white' to="https://drive.google.com/file/d/1KoWFLDIRavkWPzZuWD4IgbY93INM7xW9/view?usp=sharing">
+										<Link  className='block font-semibold text-primary dark:text-white' to="https://drive.google.com/file/d/1KoWFLDIRavkWPzZuWD4IgbY93INM7xW9/view?usp=sharing">
 											<p style={{
 										color: "blue"
 									}}
@@ -159,8 +159,8 @@ const Home = () => {
 										</p>
 									</div>
 								
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>El Cementerio Musulmán</b>
 										<br/>
 										A día de hoy, la comunidad musulmana en Andalucía, y generalmente en España, sufre la escasez de cementerios suficientes para los fallecidos musulmanes. 
@@ -186,17 +186,17 @@ const Home = () => {
 
 
 						<div >
-							<div class='max-w-4xl  mx-auto '>
-							<div class='mx-auto h-full'>
+							<div className='max-w-4xl  mx-auto '>
+							<div className='mx-auto h-full'>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
+									<div className='mb-10'>
+										<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
 										Formación
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>Formación Religiosa para adultos</b>
 										<br/>
 										La comunidad Islamica Suhail de la Costa del Sol ofrece una oferta formativa devesificada  y flixible que encaja con la necesidad de cada persona.										<br/>
@@ -214,17 +214,17 @@ const Home = () => {
 									
 
 									{/* <!-- Buttons
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 												Donate Now
 											</button>
 										</Link>
 									</div> --> */}
 								</div>
 
-								<div class='mb-10'>
-										<p class=''>									
+								<div className='mb-10'>
+										<p className=''>									
 										<b>Nuevos Musulmanes </b>
 										<br/>
 										La comunidad abre sus puertas a todos los interesados en conocer nuestra religion y la historia y cultura islamica y 
@@ -234,8 +234,8 @@ const Home = () => {
 										</p>
 									</div>
 								
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>Centro de idiomas</b>
 										<br/>
 										Dentro de las actividades formativas de la Comunidad se ofrece cursos de idiomas , como el Arabe, ingles y español para extranjeros.
@@ -251,17 +251,17 @@ const Home = () => {
 						
 						
 						<div >
-							<div class='max-w-4xl  mx-auto '>
-							<div class='mx-auto h-full'>
+							<div className='max-w-4xl  mx-auto '>
+							<div className='mx-auto h-full'>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
+									<div className='mb-10'>
+										<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
 										Recursos
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>Noticias</b>
 										<br/>
 										Blog.
@@ -276,17 +276,17 @@ const Home = () => {
 									
 
 									{/* <!-- Buttons
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 												Donate Now
 											</button>
 										</Link>
 									</div> --> */}
 								</div>
 
-								<div class='mb-10'>
-										<p class=''>									
+								<div className='mb-10'>
+										<p className=''>									
 										<b>Articulos y opiniones</b>
 										<br/>
 										Blog.
@@ -294,8 +294,8 @@ const Home = () => {
 										</p>
 									</div>
 								
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='mb-10'>
+										<p className=''>									
 										<b>Horarios de Rezos</b>
 										<br/>
 										Xls.
@@ -309,17 +309,17 @@ const Home = () => {
 						
 							
 						<div >
-							<div class='max-w-4xl  mx-auto contactUs '>
-							<div class='mx-auto h-full'>
+							<div className=' mx-auto contactUs '>
+							<div className=''>
 									{/* <!-- Title --> */}
-									<div class='mb-10'>
-										<h1 class='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
+									<div className=''>
+										<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
 										Contactos
 										</h1>
 									</div>
 									{/* <!-- End Title --> */}
-									<div class='mb-10'>
-										<p class=''>									
+									<div className='footer-container'>
+										<p className=''>									
 										<b>Dirección</b>
 										<br/>
 										<Link  to="https://www.google.com/maps/place/Fuengirola+Central+Mosque/@36.531229,-4.6292137,17z/data=!3m1!4b1!4m6!3m5!1s0xd72e20d8608ed3b:0xd0dc05efedf03349!8m2!3d36.531229!4d-4.627025!16s%2Fm%2F0wxzchm">
@@ -371,9 +371,9 @@ const Home = () => {
 									
 
 									{/* <!-- Buttons
-									<div class='w-full'>
+									<div className='w-full'>
 										<Link to={'/'}>
-											<button class='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
 												Donate Now
 											</button>
 										</Link>
