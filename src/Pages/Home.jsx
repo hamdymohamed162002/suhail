@@ -309,7 +309,7 @@ const Home = () => {
 						
 							
 						<div >
-							<div class='max-w-4xl  mx-auto '>
+							<div class='max-w-4xl  mx-auto contact '>
 							<div class='mx-auto h-full'>
 									{/* <!-- Title --> */}
 									<div class='mb-10'>
