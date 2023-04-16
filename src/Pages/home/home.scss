@@ -4,5 +4,25 @@
     .footer-container{
         width: 80%;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 20px;
+        b{
+            font-size: 24px;
+            color: #307979;
+        }
+        @media (max-width:1100px) {
+            div{
+                width: 100%;
+                margin-bottom: 20px;
+                border-bottom: 2px #307979 solid;
+                padding-bottom: 15px;
+            }
+            
+        }
     }
+}
+.title{
+    
 }
