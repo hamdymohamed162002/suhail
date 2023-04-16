@@ -1,14 +1,22 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate, useRoutes } from "react-router-dom";
 import { navLinks } from "../../staticData";
 import "./navbar.scss";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
+  const route=useLocation();
+  const nav=useNavigate();
   function handleClick(event, navLink) {
     event.preventDefault();
     const section = document.getElementById(navLink.path);
     setActiveLink(navLink.label);
+    if(route.pathname==='/partners')
+    {
+      nav(`/#${navLink.path}`);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    else
     section.scrollIntoView({ behavior: "smooth" });
   }
   return (
@@ -70,12 +78,12 @@ const Navbar = () => {
                     }`}
                     key={navLink.id}
                   >
-                    <a
+                    <Link
                       href="#"
                       onClick={(event) => handleClick(event, navLink)}
                     >
                       {navLink.label}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

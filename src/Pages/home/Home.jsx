@@ -185,7 +185,7 @@ const Home = () => {
 
 
 
-					<div >
+					<div id='formación' >
 						<div className='max-w-4xl  mx-auto '>
 							<div className='mx-auto h-full'>
 								{/* <!-- Title --> */}
@@ -250,7 +250,7 @@ const Home = () => {
 
 
 
-					<div >
+					<div id='recursos' >
 						<div className='max-w-4xl  mx-auto '>
 							<div className='mx-auto h-full'>
 								{/* <!-- Title --> */}
@@ -308,7 +308,7 @@ const Home = () => {
 
 
 
-					<div >
+					<div id='contactos'>
 						<div className=' mx-auto contactUs '>
 							<div className=''>
 								{/* <!-- Title --> */}
