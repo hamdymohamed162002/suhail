@@ -4,134 +4,132 @@ import './home.scss'
 import facebook from './../../assets/facebook-svgrepo-com.svg';
 import youtube from './../../assets/youtube-168-svgrepo-com.svg'
 const Home = () => {
-	return (
-		<>
-			<main>
-				<section>
-					{/* <!-- Hero --> */}
-					<div
-						className='relative overflow-hidden min-h-screen flex justify-center items-center w-full'
-						style={{
-							backgroundImage: `url("https://uploads-ssl.webflow.com/61d62bbdbf92e35450b01a00/63f2c0203f4efb4f66513d4d_video(6)-poster-00001.jpg")`,
-							backgroundPosition: 'center',
-							backgroundSize: 'cover',
-							backgroundRepeat: 'no-repeat',
-							objectFit: 'cover',
-							fontSize: '1rem'
-						}}>
-						<div className='z-10 w-full h-[600px] overflow-hidden flex justify-center items-center'>
-							<div className='max-w-4xl  mx-auto'>
-								<div className='text-center mx-auto h-full'>
-									{/* <!-- Title --> */}
-									<div className='mb-10'>
-										<h1 className='block font-semibold text-white dark:text-white text-2xl md:text-3xl lg:text-4xl '>
-											Estamos desarrollando un plan para todo
-										</h1>
-									</div>
-									{/* <!-- End Title --> */}
-									<div className='mb-10'>
-										<p className='text-lg text-gray-300 text-white dark:text-gray-400'>
-											Participar en un proyecto es una acción positiva para ayudarte a mejorar y ayudar a los demás.
-											Mejora tu futuro y el futuro de los tuyos es fácil, comienza con buena voluntad y se desarrolla con buenas  palabras,
-											consejo y efectiva colaboración.
-										</p>
-									</div>
-									{/* <!-- Buttons --> */}
-									<div className='w-full'>
-										<Link to={'/partners'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
-												Donar
-											</button>
-										</Link>
-									</div>
+  return (
+    <>
+      <main>
+        <section>
+          {/* <!-- Hero --> */}
+          <div
+            id="home"
+            className="relative flex items-center justify-center w-full min-h-screen overflow-hidden"
+            style={{
+              backgroundImage: `url("https://uploads-ssl.webflow.com/61d62bbdbf92e35450b01a00/63f2c0203f4efb4f66513d4d_video(6)-poster-00001.jpg")`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+              fontSize: "1rem",
+            }}
+          >
+            <div className="z-10 w-full h-[600px] overflow-hidden flex justify-center items-center">
+              <div className="max-w-4xl mx-auto">
+                <div className="h-full mx-auto text-center">
+                  {/* <!-- Title --> */}
+                  <div className="mb-10">
+                    <h1 className="block text-2xl font-semibold text-white dark:text-white md:text-3xl lg:text-4xl ">
+                      Estamos desarrollando un plan para todo
+                    </h1>
+                  </div>
+                  {/* <!-- End Title --> */}
+                  <div className="mb-10">
+                    <p className="text-lg text-white text-gray-300 dark:text-gray-400">
+                      Participar en un proyecto es una acción positiva para
+                      ayudarte a mejorar y ayudar a los demás. Mejora tu futuro
+                      y el futuro de los tuyos es fácil, comienza con buena
+                      voluntad y se desarrolla con buenas palabras, consejo y
+                      efectiva colaboración.
+                    </p>
+                  </div>
+                  {/* <!-- Buttons --> */}
+                  <div className="w-full">
+                    <Link to={"/partners"}>
+                      <button className="px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95">
+                        Donar
+                      </button>
+                    </Link>
+                  </div>
 
-									{/* <!-- End Buttons --> */}
-								</div>
-							</div>
-						</div>
-					</div>
-					{/* <!-- End Hero --> */}
+                  {/* <!-- End Buttons --> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- End Hero --> */}
 
-
-					<div className='z-10 w-full h-[400px] overflow-hidden flex justify-center items-center'
-						style={{
-
-						}}>
-						<div className='max-w-4xl  mx-auto '>
-							<div className='mx-auto h-full'>
-								{/* <!-- Title --> */}
-								<div className='mb-10'>
-									<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
-										La Comunidad
-									</h1>
-								</div>
-								{/* <!-- End Title --> */}
-								<div className='mb-10'>
-									<p className=''>
-										La Comunidad Islámica Suhail de la Costa del Sol es una comunidad religiosa inscrita en el Registro de
-										Entidades Religiosas de España con el nº xxxx.
-										<br />
-										Misión
-										Nuestra misión es difundir la paz y hermandad, y ayudar a todas las personas a lograr una vida espiritual tranquila.
-										<br />
-										Visión:
-										<br />
-										Valores:
-
-									</p>
-								</div>
-								{/* <!-- Buttons 
+          <div
+            id="comunidad"
+            className="z-10 w-full h-[400px] overflow-hidden flex justify-center items-center"
+            style={{}}
+          >
+            <div className="max-w-4xl mx-auto ">
+              <div className="h-full mx-auto">
+                {/* <!-- Title --> */}
+                <div className="mb-10">
+                  <h1 className="block text-2xl font-semibold text-center text-black dark:text-white md:text-3xl lg:text-4xl">
+                    La Comunidad
+                  </h1>
+                </div>
+                {/* <!-- End Title --> */}
+                <div className="mb-10">
+                  <p className="">
+                    La Comunidad Islámica Suhail de la Costa del Sol es una
+                    comunidad religiosa inscrita en el Registro de Entidades
+                    Religiosas de España con el nº xxxx.
+                    <br />
+                    Misión Nuestra misión es difundir la paz y hermandad, y
+                    ayudar a todas las personas a lograr una vida espiritual
+                    tranquila.
+                    <br />
+                    Visión:
+                    <br />
+                    Valores:
+                  </p>
+                </div>
+                {/* <!-- Buttons 
 									<div className='w-full'>
 										<Link to={'/'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95'>
 												Donate Now
 											</button>
 										</Link>
 									</div>
 									--> */}
+              </div>
+            </div>
+          </div>
 
-
-
-							</div>
-						</div>
-					</div>
-
-
-
-
-
-					<div >
-						<div className='max-w-4xl  mx-auto '>
-							<div className='mx-auto h-full'>
-								{/* <!-- Title --> */}
-								<div className='mb-10'>
-									<h1 className='block font-semibold text-black dark:text-white text-2xl md:text-3xl lg:text-4xl text-center'>
-										Proyectos y Programas
-									</h1>
-								</div>
-								{/* <!-- End Title --> */}
-								<div className='mb-10'>
-									<p className=''>
-										<b>Programa de Ayudas Sociales</b>
-										<br />
-										Desde 2008, se comenzó, junto con otras entidades, el programa de ayuda social a las familias vulnerables o con necesidad.
-										<br />
-										De este programa se benefician más de 4200 familias anualmente.
-										La Comunidad Islámica Suhail de la Costa del Sol, junto con la Unión de Comunidades y Asociaciones de España, organizan campañas en las que se definen las familias más necesitadas para cubrir sus necesidades mínimas en forma de ayuda alimenticia u otro tipo de ayudas.
-										<br />
-
-
-									</p>
-
-
-								</div>
-
-
+          <div id="proyectos-y-programas">
+            <div className="max-w-4xl mx-auto ">
+              <div className="h-full mx-auto">
+                {/* <!-- Title --> */}
+                <div className="mb-10">
+                  <h1 className="block text-2xl font-semibold text-center text-black dark:text-white md:text-3xl lg:text-4xl">
+                    Proyectos y Programas
+                  </h1>
+                </div>
+                {/* <!-- End Title --> */}
+                <div className="mb-10">
+                  <p className="">
+                    <b>Programa de Ayudas Sociales</b>
+                    <br />
+                    Desde 2008, se comenzó, junto con otras entidades, el
+                    programa de ayuda social a las familias vulnerables o con
+                    necesidad.
+                    <br />
+                    De este programa se benefician más de 4200 familias
+                    anualmente. La Comunidad Islámica Suhail de la Costa del
+                    Sol, junto con la Unión de Comunidades y Asociaciones de
+                    España, organizan campañas en las que se definen las
+                    familias más necesitadas para cubrir sus necesidades mínimas
+                    en forma de ayuda alimenticia u otro tipo de ayudas.
+                    <br />
+                  </p>
+                </div>
 
 								{/* <!-- Buttons
 									<div className='w-full'>
 										<Link to={'/'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95'>
 												Donate Now
 											</button>
 										</Link>
@@ -218,7 +216,7 @@ const Home = () => {
 								{/* <!-- Buttons
 									<div className='w-full'>
 										<Link to={'/'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95'>
 												Donate Now
 											</button>
 										</Link>
@@ -280,7 +278,7 @@ const Home = () => {
 								{/* <!-- Buttons
 									<div className='w-full'>
 										<Link to={'/'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95'>
 												Donate Now
 											</button>
 										</Link>
@@ -381,7 +379,7 @@ const Home = () => {
 								{/* <!-- Buttons
 									<div className='w-full'>
 										<Link to={'/'}>
-											<button className='text-center bg-amber-400 hover:bg-amber-500 text-white text-xl font-semibold rounded-md  py-3 px-4 uppercase active:scale-95 duration-150 ease-in-out'>
+											<button className='px-4 py-3 text-xl font-semibold text-center text-white uppercase duration-150 ease-in-out rounded-md bg-amber-400 hover:bg-amber-500 active:scale-95'>
 												Donate Now
 											</button>
 										</Link>

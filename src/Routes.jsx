@@ -1,7 +1,7 @@
 import { createHashRouter, Outlet } from 'react-router-dom';
 import NotFound404 from './Pages/NotFound404';
 import Home from './Pages/home/Home';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/navbar/Navbar';
 import Donation from './Pages/Donation';
 import Partners from './Pages/Partners';
 
